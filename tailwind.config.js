@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
@@ -8,10 +10,12 @@ module.exports = {
         "deep-blue": "#010026",
         blue: "#2CBCE9",
         red: "#DC4492",
-        yellow: "#FDCC49",
+        green: "#31C48D",
         grey: "#ededed",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        "darkgreen": "#0F4D36",
+
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
@@ -25,10 +29,7 @@ module.exports = {
         opensans: ["Open Sans", "sans-serif"],
       },
       content: {
-        brush: "url('./assets/brush.png')",
-        person1: "url('./assets/person-1.png')",
-        person2: "url('./assets/person-2.png')",
-        person3: "url('./assets/person-3.png')",
+
       },
     },
     screens: {

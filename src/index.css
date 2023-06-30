@@ -8,6 +8,10 @@ body,
 #root,
 .app{
     height: 100%;
-    background-color: #010026;
-    @apply text-white;
+    background-color: #fffdfd;
+    /* @apply text-green; */
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }

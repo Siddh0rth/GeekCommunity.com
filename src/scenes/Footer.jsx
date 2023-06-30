@@ -1,16 +1,44 @@
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import React from "react";
+import SocialIcons from "./SocialIcons";
+import Item from "./Item";
+import {CONTACT, ABOUT_US, TERMS_OF_USE } from "./Menus";
+import { Icons } from "./Menus";
 
 const Footer = () => {
-    return (
-        <footer className="h-64 bg-red pt-10 ">
-            <div className="w-5/6 mx-auto">
-                <SocialMediaIcons /> 
-                <div className="md:flex justify-center md:justify-between text-center ">
-                    <p className="font-playfair font-semibold text-2xl text-yellow">Siddharth Yadav</p>
-                    <p className="font-playfair text-md text-yellow">&#169;2023 Siddharth. All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
-    )
-}
+  return (
+    <footer className="bg-green-500 text-white">
+   
+   <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
+      text-center pt-20 text-white text-sm pb-2"
+      >
+        <span><Item Links={CONTACT} title="CONTACT" /></span>
+        <span><Item Links={ABOUT_US} title="ABOUT US" /></span>
+        <span><Item Links={TERMS_OF_USE} title="TERMS OF USE" /></span>
+      </div>
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
+      text-center pt-2 text-white text-sm pb-8"
+      >
+        
+      </div>
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
+      text-center pt-2 text-white text-sm pb-8"
+      >
+         
+      </div>
+      
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
+      text-center pt-2 text-white text-sm pb-8"
+      >
+        <span>© 2023 Appy. All rights reserved.</span>
+        <span>Terms · Privacy Policy</span>
+        <SocialIcons Icons={Icons} />
+      </div>
+    </footer>
+  );
+};
+
 export default Footer;
