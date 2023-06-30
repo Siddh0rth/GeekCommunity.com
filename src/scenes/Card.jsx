@@ -18,11 +18,8 @@ function Card(props) {
           </div>
 
           <div className="flex items-center my-2">
-            {/* <button className="border px-3 py-1 text-xs rounded-lg mr-1 ">
-              Buy Now
-            </button> */}
            <div className="justify-center">
-           <button className="text-white bg-green-500 hover:bg-green-600 border px-28 py-1 text-sm rounded-lg">
+           <button className="text-white bg-green hover:bg-green-600 border px-28 py-1 text-sm rounded-lg">
               Register
             </button>
            </div>

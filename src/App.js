@@ -53,9 +53,9 @@ function App() {
         </motion.div>
       </div>
 
-      <div className="app  bg-gray-100 w-[100vw] h-[70vh]">
-        <Footer/>
-    </div>
+      <div className=" w-[100vw]">
+        <Footer />
+      </div>
     </div>
   );
 }
